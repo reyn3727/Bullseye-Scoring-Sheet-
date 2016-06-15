@@ -1,0 +1,24 @@
+ CREATE TABLE `bullseye` (
+  `id` int(7) DEFAULT NULL,
+  `competitor_id` int(7) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `week` int(3) DEFAULT NULL,
+  `caliber` char(10) DEFAULT NULL,
+  `model` char(15) DEFAULT NULL,
+  `target_type` char(1) DEFAULT NULL,
+  `station` int(3) DEFAULT NULL,
+  `target_number` int(3) DEFAULT NULL,
+  `shot_1` char(2) DEFAULT NULL,
+  `shot_2` char(2) DEFAULT NULL,
+  `shot_3` char(2) DEFAULT NULL,
+  `shot_4` char(2) DEFAULT NULL,
+  `shot_5` char(2) DEFAULT NULL,
+  `shot_6` char(2) DEFAULT NULL,
+  `shot_7` char(2) DEFAULT NULL,
+  `shot_8` char(2) DEFAULT NULL,
+  `shot_9` char(2) DEFAULT NULL,
+  `shot_10` char(2) DEFAULT NULL,
+  `target_total` int(3) DEFAULT NULL,
+  `target_notes` char(20) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 
+

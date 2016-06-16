@@ -27,17 +27,6 @@
       }
      else
      {
-      $result = mysqli_query($mydbh,"select shooter_id from bullseye_shooter order by shooter_id desc limit 1");
-      if (!$result)
-           {
-            $error = 'Error!';
-            include 'error.php';
-            exit();
-           }
-        while ($row = $result->fetch_array(MYSQLI_BOTH))
-       {
-        $shooter_id = $row['shooter_id'] + 1;
-       }
          $shooter_id = mysqli_real_escape_string($mydbh,$shooter_id);
          $name = mysqli_real_escape_string($mydbh,$name);
          $phone = mysqli_real_escape_string($mydbh,$phone);

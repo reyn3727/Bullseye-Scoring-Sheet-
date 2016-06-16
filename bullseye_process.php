@@ -148,17 +148,6 @@
       }
      else
      {
-       $result = mysqli_query($mydbh,"select id from bullseye order by id desc limit 1");
-        if (!$result)
-           {
-            $error = 'Error!';
-            include 'error.php';
-            exit();
-           }
-        while ($row = $result->fetch_array(MYSQLI_BOTH))
-        {
-        $id = $row['id'] + 1;
-        }
          $id = mysqli_real_escape_string($mydbh,$id);
          $competitor_id = mysqli_real_escape_string($mydbh,$competitor_id);
          $date = mysqli_real_escape_string($mydbh,$date);
